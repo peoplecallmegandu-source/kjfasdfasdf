@@ -1,0 +1,235 @@
+<!--  -->
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:300,400,500,600,700&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Acme Studio — Home</title>
+  <meta name="description" content="Modern full-width website example built with Tailwind CSS" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CDN (uses class-based dark mode) -->
+  <script>
+    // Configure tailwind (for CDN usage)
+    tailwindConfig = {
+      darkMode: 'class'
+    }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    /* Ensure the chosen Google Font is used */
+    html, body { font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; }
+  </style>
+</head>
+<body style="font-family: 'Inter', sans-serif;" class="w-full bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-100 antialiased">
+  <!-- Header -->
+  <header class="w-full max-w-none bg-white dark:bg-gray-800 shadow-sm sticky top-0 z-40">
+    <nav class="w-full max-w-none px-6 py-4 flex items-center justify-between gap-4">
+      <div class="flex items-center gap-4">
+        <a href="#" onclick="window.parent.handlePreviewNavigation(\'index.html\'); return false;" class="flex items-center gap-3 no-underline">
+          <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-500 flex items-center justify-center text-white font-bold transform transition-transform hover:scale-105">AS</div>
+          <div class="leading-tight">
+            <div class="text-lg font-extrabold">Acme Studio</div>
+            <div class="text-xs text-gray-500 dark:text-gray-300">Digital product & design</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="hidden md:flex items-center gap-6">
+        <a href="#" onclick="window.parent.handlePreviewNavigation(\'index.html\'); return false;" class="text-sm font-medium hover:text-indigo-600 dark:hover:text-indigo-400 transition">Home</a>
+        <a href="#" onclick="window.parent.handlePreviewNavigation(\'about.html\'); return false;" class="text-sm font-medium hover:text-indigo-600 dark:hover:text-indigo-400 transition">About</a>
+        <a href="#" onclick="window.parent.handlePreviewNavigation(\'contact.html\'); return false;" class="text-sm font-medium hover:text-indigo-600 dark:hover:text-indigo-400 transition">Contact</a>
+        <button id="themeToggle" class="ml-2 p-2 rounded-md bg-gray-100 dark:bg-gray-700 hover:scale-105 transition" aria-label="Toggle theme">🌙</button>
+      </div>
+
+      <div class="md:hidden">
+        <button id="mobileMenuBtn" class="p-2 rounded-md bg-gray-100 dark:bg-gray-700 hover:scale-105 transition">☰</button>
+      </div>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="hidden px-6 pb-4 md:hidden bg-white dark:bg-gray-800">
+      <a href="#" onclick="window.parent.handlePreviewNavigation(\'index.html\'); return false;" class="block py-2 text-sm hover:text-indigo-600">Home</a>
+      <a href="#" onclick="window.parent.handlePreviewNavigation(\'about.html\'); return false;" class="block py-2 text-sm hover:text-indigo-600">About</a>
+      <a href="#" onclick="window.parent.handlePreviewNavigation(\'contact.html\'); return false;" class="block py-2 text-sm hover:text-indigo-600">Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main class="w-full max-w-none">
+    <section class="w-full px-6 py-20 flex flex-col md:flex-row items-center gap-10">
+      <div class="w-full md:w-1/2">
+        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">Crafting elegant digital products that scale</h1>
+        <p class="mt-4 text-lg text-gray-600 dark:text-gray-300">We design and build usable, high-performance web experiences that help teams move faster and delight users across devices. Fully responsive & full-bleed layouts that use the entire viewport.</p>
+
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="#" onclick="window.parent.handlePreviewNavigation(\'contact.html\'); return false;" class="inline-block px-5 py-3 rounded-md bg-indigo-600 text-white font-semibold hover:shadow-lg transform hover:-translate-y-0.5 transition">Get in touch</a>
+          <a href="#" onclick="window.parent.handlePreviewNavigation(\'about.html\'); return false;" class="inline-block px-5 py-3 rounded-md border border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 transition">Learn more</a>
+        </div>
+
+        <div class="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-4 text-sm text-gray-500 dark:text-gray-300">
+          <div class="py-3 px-4 rounded-lg bg-gray-100 dark:bg-gray-800">
+            <div class="font-bold text-lg">120+</div>
+            <div>Projects</div>
+          </div>
+          <div class="py-3 px-4 rounded-lg bg-gray-100 dark:bg-gray-800">
+            <div class="font-bold text-lg">10k+</div>
+            <div>Users onboarded</div>
+          </div>
+          <div class="py-3 px-4 rounded-lg bg-gray-100 dark:bg-gray-800">
+            <div class="font-bold text-lg">99.9%</div>
+            <div>Uptime</div>
+          </div>
+          <div class="py-3 px-4 rounded-lg bg-gray-100 dark:bg-gray-800">
+            <div class="font-bold text-lg">24/7</div>
+            <div>Support</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full md:w-1/2">
+        <div class="w-full rounded-xl p-6 bg-gradient-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-700 shadow-lg">
+          <div class="flex flex-col gap-4">
+            <div class="flex items-center justify-between">
+              <div>
+                <div class="text-sm text-gray-500 dark:text-gray-300">Featured</div>
+                <div class="text-lg font-bold">Design System Sprint</div>
+              </div>
+              <div class="text-xs text-gray-400">2 weeks</div>
+            </div>
+
+            <div class="border-t border-gray-200 dark:border-gray-600 pt-4">
+              <div class="text-sm text-gray-600 dark:text-gray-300">We rapidly prototype a consistent component library, accessible patterns, and a token-based theme to speed engineering and design handoffs.</div>
+            </div>
+
+            <div class="mt-4 grid grid-cols-3 gap-2">
+              <div class="py-2 px-3 rounded bg-indigo-50 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-200 text-center text-sm">Design</div>
+              <div class="py-2 px-3 rounded bg-green-50 dark:bg-green-900/20 text-green-700 dark:text-green-200 text-center text-sm">Research</div>
+              <div class="py-2 px-3 rounded bg-yellow-50 dark:bg-yellow-900/10 text-yellow-700 dark:text-yellow-200 text-center text-sm">Engineering</div>
+            </div>
+
+            <div class="mt-4 flex items-center gap-3">
+              <button class="px-4 py-2 rounded-md bg-indigo-600 text-white hover:bg-indigo-700 transition">Explore Sprint</button>
+              <a href="#" onclick="window.parent.handlePreviewNavigation(\'contact.html\'); return false;" class="text-sm text-indigo-600 dark:text-indigo-400 hover:underline">Start a project →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services (full width) -->
+    <section class="w-full px-6 py-16 bg-white dark:bg-gray-900">
+      <h2 class="text-2xl md:text-3xl font-extrabold">Services</h2>
+      <p class="mt-2 text-gray-600 dark:text-gray-300">End-to-end product strategy, design and web engineering focused on measurable results.</p>
+
+      <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-none">
+        <div class="p-6 rounded-xl bg-gray-50 dark:bg-gray-800 shadow-sm hover:shadow-lg transition-transform transform hover:-translate-y-1">
+          <div class="text-indigo-600 text-2xl">🎯</div>
+          <div class="mt-3 font-semibold">Product Strategy</div>
+          <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Roadmaps, discovery workshops, and metrics that align stakeholders.</p>
+        </div>
+
+        <div class="p-6 rounded-xl bg-gray-50 dark:bg-gray-800 shadow-sm hover:shadow-lg transition-transform transform hover:-translate-y-1">
+          <div class="text-green-600 text-2xl">✏️</div>
+          <div class="mt-3 font-semibold">UX & Visual Design</div>
+          <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Human-centered interfaces, component libraries, and accessibility audits.</p>
+        </div>
+
+        <div class="p-6 rounded-xl bg-gray-50 dark:bg-gray-800 shadow-sm hover:shadow-lg transition-transform transform hover:-translate-y-1">
+          <div class="text-purple-600 text-2xl">⚙️</div>
+          <div class="mt-3 font-semibold">Frontend Engineering</div>
+          <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Performant, testable, and maintainable web apps and static sites.</p>
+        </div>
+
+        <div class="p-6 rounded-xl bg-gray-50 dark:bg-gray-800 shadow-sm hover:shadow-lg transition-transform transform hover:-translate-y-1">
+          <div class="text-yellow-600 text-2xl">📈</div>
+          <div class="mt-3 font-semibold">Optimization</div>
+          <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">A/B testing, analytics, and performance tuning for growth teams.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials (text-only) -->
+    <section class="w-full px-6 py-16">
+      <h3 class="text-2xl font-extrabold">What clients say</h3>
+      <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <blockquote class="p-6 rounded-lg bg-gray-100 dark:bg-gray-800 shadow-inner">
+          <p class="text-sm text-gray-700 dark:text-gray-200">"Acme Studio helped us reduce launch time by 50%. Their design system saved our team weeks of work."</p>
+          <footer class="mt-4 text-xs text-gray-500">— Product Lead, Fintech</footer>
+        </blockquote>
+
+        <blockquote class="p-6 rounded-lg bg-gray-100 dark:bg-gray-800 shadow-inner">
+          <p class="text-sm text-gray-700 dark:text-gray-200">"The team combined strong UX sense with pragmatic engineering. Communication was exceptional."</p>
+          <footer class="mt-4 text-xs text-gray-500">— CTO, Healthtech</footer>
+        </blockquote>
+
+        <blockquote class="p-6 rounded-lg bg-gray-100 dark:bg-gray-800 shadow-inner">
+          <p class="text-sm text-gray-700 dark:text-gray-200">"Great results and clear next steps — delivered on time and on budget."</p>
+          <footer class="mt-4 text-xs text-gray-500">— Head of Design, Marketplace</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="w-full px-6 py-16 bg-indigo-600 text-white">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+        <div>
+          <h4 class="text-2xl font-extrabold">Ready to start your next product?</h4>
+          <p class="mt-2 text-sm opacity-90">We partner with teams to move fast without sacrificing quality. Let's talk about your goals.</p>
+        </div>
+        <div class="flex gap-3">
+          <a href="#" onclick="window.parent.handlePreviewNavigation(\'contact.html\'); return false;" class="px-5 py-3 rounded-md bg-white text-indigo-600 font-semibold hover:opacity-95 transition">Contact us</a>
+          <a href="#" onclick="window.parent.handlePreviewNavigation(\'about.html\'); return false;" class="px-5 py-3 rounded-md border border-white/30 text-white hover:bg-white/10 transition">Our approach</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="w-full px-6 py-8 bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700">
+    <div class="w-full max-w-none flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="text-sm">&copy; <span id="year"></span> Acme Studio. All rights reserved.</div>
+      <div class="flex items-center gap-4 text-sm">
+        <a href="#" onclick="window.parent.handlePreviewNavigation(\'about.html\'); return false;" class="hover:underline">About</a>
+        <a href="#" onclick="window.parent.handlePreviewNavigation(\'contact.html\'); return false;" class="hover:underline">Contact</a>
+        <a href="#" class="hover:underline">Privacy</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Year update
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile menu toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileMenuBtn && mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Theme toggle (persist in localStorage)
+    const themeToggle = document.getElementById('themeToggle');
+    const root = document.documentElement;
+    function applyTheme(theme) {
+      if (theme === 'dark') root.classList.add('dark');
+      else root.classList.remove('dark');
+      if (themeToggle) themeToggle.textContent = theme === 'dark' ? '☀️' : '🌙';
+    }
+    const savedTheme = localStorage.getItem('acme-theme') || 'light';
+    applyTheme(savedTheme);
+    themeToggle && themeToggle.addEventListener('click', () => {
+      const next = root.classList.contains('dark') ? 'light' : 'dark';
+      localStorage.setItem('acme-theme', next);
+      applyTheme(next);
+    });
+  </script>
+</body>
+</html>
