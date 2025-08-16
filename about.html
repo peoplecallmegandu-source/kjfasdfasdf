@@ -1,0 +1,128 @@
+<!--  -->
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:300,400,500,600,700&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — Acme Studio</title>
+  <meta name="description" content="About Acme Studio — mission, team and approach." />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <script>
+    tailwindConfig = { darkMode: 'class' }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>html, body { font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; }</style>
+</head>
+<body style="font-family: 'Inter', sans-serif;" class="w-full max-w-none bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-100">
+  <!-- Header -->
+  <header class="w-full max-w-none bg-white dark:bg-gray-800 shadow-sm">
+    <div class="w-full px-6 py-4 flex items-center justify-between">
+      <a href="#" onclick="window.parent.handlePreviewNavigation(\'index.html\'); return false;" class="flex items-center gap-3 no-underline">
+        <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-500 flex items-center justify-center text-white font-bold">AS</div>
+        <div class="text-lg font-extrabold">Acme Studio</div>
+      </a>
+      <div class="hidden md:flex items-center gap-6">
+        <a href="#" onclick="window.parent.handlePreviewNavigation(\'index.html\'); return false;" class="text-sm hover:text-indigo-600">Home</a>
+        <a href="#" onclick="window.parent.handlePreviewNavigation(\'about.html\'); return false;" class="text-sm font-semibold">About</a>
+        <a href="#" onclick="window.parent.handlePreviewNavigation(\'contact.html\'); return false;" class="text-sm hover:text-indigo-600">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="w-full max-w-none">
+    <section class="w-full px-6 py-12">
+      <h1 class="text-3xl md:text-4xl font-extrabold">About Acme Studio</h1>
+      <p class="mt-3 text-gray-600 dark:text-gray-300">We are a small team of product designers and frontend engineers who love building delightful, high-performing web experiences. Our process emphasizes clarity, measurable outcomes, and inclusive design.</p>
+
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="p-6 rounded-lg bg-white dark:bg-gray-800 shadow-sm">
+          <h3 class="font-bold">Our mission</h3>
+          <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Help teams ship better products by providing pragmatic design and engineering that scales across platforms.</p>
+        </div>
+
+        <div class="p-6 rounded-lg bg-white dark:bg-gray-800 shadow-sm">
+          <h3 class="font-bold">Our values</h3>
+          <ul class="mt-2 text-sm text-gray-600 dark:text-gray-300 list-disc list-inside">
+            <li>Clarity: Make decisions that are explainable and measurable.</li>
+            <li>Empathy: Understand users and teammates.</li>
+            <li>Craft: Care about polish and performance.</li>
+          </ul>
+        </div>
+
+        <div class="p-6 rounded-lg bg-white dark:bg-gray-800 shadow-sm">
+          <h3 class="font-bold">How we work</h3>
+          <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Short cycles, collaborative workshops, and a strong emphasis on design systems and documentation so your team can move faster post-engagement.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full px-6 py-12 bg-gray-100 dark:bg-gray-800">
+      <h2 class="text-2xl font-extrabold">The Team</h2>
+      <p class="mt-2 text-gray-600 dark:text-gray-300">Our distributed team brings together designers and engineers with hands-on product experience.</p>
+
+      <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="p-6 rounded-lg bg-white dark:bg-gray-700 shadow-sm">
+          <div class="font-semibold">Ava Park</div>
+          <div class="text-sm text-gray-500">Founder & Product Lead</div>
+          <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Product strategy, discovery, and roadmap facilitation.</p>
+        </div>
+
+        <div class="p-6 rounded-lg bg-white dark:bg-gray-700 shadow-sm">
+          <div class="font-semibold">Miguel Torres</div>
+          <div class="text-sm text-gray-500">Design Director</div>
+          <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">UX systems, accessibility, and visual design.</p>
+        </div>
+
+        <div class="p-6 rounded-lg bg-white dark:bg-gray-700 shadow-sm">
+          <div class="font-semibold">Rina Patel</div>
+          <div class="text-sm text-gray-500">Frontend Engineer</div>
+          <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Jamstack, performance, and component architecture.</p>
+        </div>
+
+        <div class="p-6 rounded-lg bg-white dark:bg-gray-700 shadow-sm">
+          <div class="font-semibold">Sam Brown</div>
+          <div class="text-sm text-gray-500">Research Lead</div>
+          <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Qualitative & quantitative user research.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full px-6 py-12">
+      <h2 class="text-2xl font-extrabold">Approach</h2>
+      <p class="mt-2 text-gray-600 dark:text-gray-300">We break work into clear phases: Understand, Prototype, Validate, and Ship. Each phase includes deliverables and checkpoints so stakeholders always know progress and tradeoffs.</p>
+
+      <div class="mt-6 flex flex-col md:flex-row gap-6">
+        <div class="flex-1 p-6 rounded-lg bg-white dark:bg-gray-800 shadow-sm">
+          <div class="font-semibold">Understand</div>
+          <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Research and stakeholder workshops to surface user needs and business goals.</p>
+        </div>
+        <div class="flex-1 p-6 rounded-lg bg-white dark:bg-gray-800 shadow-sm">
+          <div class="font-semibold">Prototype</div>
+          <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Rapid prototypes to test assumptions and iterate quickly with real users.</p>
+        </div>
+        <div class="flex-1 p-6 rounded-lg bg-white dark:bg-gray-800 shadow-sm">
+          <div class="font-semibold">Ship</div>
+          <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Deliver high-quality front-end code and documentation that your team can maintain.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="w-full px-6 py-8 bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700">
+    <div class="flex items-center justify-between">
+      <div class="text-sm">&copy; <span id="yearAbout"></span> Acme Studio</div>
+      <div class="text-sm"><a href="#" onclick="window.parent.handlePreviewNavigation(\'contact.html\'); return false;" class="hover:underline">Work with us</a></div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('yearAbout').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
